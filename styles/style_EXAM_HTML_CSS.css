@@ -5,7 +5,7 @@
 header{
     width: 100%;
     height: 86px;
-    box-shadow: 4px 6px 13px 0px #D7D7D740;
+    box-shadow: 4px 6px 13px 0 #D7D7D740;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 700;
     line-height: 100%;
@@ -102,7 +102,7 @@ main{
 .wrapper_h1_p_form div:nth-child(2){
     width: 665px;
     height: 56px;
-    padding: 3px 0px 3px 12px;
+    padding: 3px 0 3px 12px;
     border-left: 3px solid #2B2C34 ;
 }
 .section_Hi_im_Dasteen h1{
@@ -184,7 +184,8 @@ main{
     justify-content: space-between;
     align-items: start;
 }
-.w_1250_section_categories>div:nth-child(1){
+/*.w_1250_section_categories>div:nth-child(1){*/
+.top_row_in_card_blocks{
     width: 100%;
     height: 35px;
     display: flex;
@@ -198,13 +199,15 @@ main{
     text-transform: capitalize;
     color: #2B2C34;
 }
-.w_1250_section_categories div:nth-child(1) a{
+/*.w_1250_section_categories div:nth-child(1) a{*/
+.a_in_top_row_in_card_blocks{
     font-size: 20px;
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.w_1250_section_categories div:nth-child(1) a>img{
+/*.w_1250_section_categories div:nth-child(1) a>img{*/
+.img_in_a_in_top_row_in_card_blocks{
     padding: 9px 7px 2px 0;
 }
 .cards_categories{
@@ -220,7 +223,7 @@ main{
     padding: 65px 0 95px 30px;
     background: #FFFFFE;
     border-radius: 8px;
-    box-shadow: 4px 6px 13px 0px #D7D7D740;
+    box-shadow: 4px 6px 13px 0 #D7D7D740;
     color: #2B2C34;
 }
 .card_category div{
@@ -282,27 +285,99 @@ div.anothercolor:hover p{
     align-items: start;
     background: #ccf6f6;
 }
-.wrapper_Featured_article>div:nth-child(1){  /*переделать на класс и выше тоже*/
+/*.wrapper_Featured_article>div:nth-child(1){  !*переделать на класс и выше тоже*!*/
+/*.top_row_in_card_blocks{*/
+/*    width: 100%;*/
+/*    height: 35px;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    font-family: "Plus Jakarta Sans", sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-size: 24px;*/
+/*    line-height: 100%;*/
+/*    letter-spacing: 0;*/
+/*    text-transform: capitalize;*/
+/*    color: #2B2C34;*/
+/*}*/
+/*.wrapper_Featured_article div:nth-child(1) a{ !*переделать на класс и выше тоже*!*/
+/*.a_in_top_row_in_card_blocks{*/
+/*    font-size: 20px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 12px;*/
+}
+/*.wrapper_Featured_article div:nth-child(1) a>img{ !*переделать на класс и выше тоже*!*/
+/*.img_in_a_in_top_row_in_card_blocks{*/
+/*    padding: 9px 7px 2px 0;*/
+/*}*/
+.Featured_article, .css_article,.javascript_article, .React_JS_article{
     width: 100%;
-    height: 35px;
+    height: 425px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #caff97;
+}
+.card_article{
+    width: 300px;
+    height: 425px;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_p_in_card_artic{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.img_p_in_card_article>p{
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 100%;
     letter-spacing: 0;
     text-transform: capitalize;
+    margin-top: 25px;
+    line-height: normal;
+}
+.date_of_article{
+    width: 100%;
+    height: 57px;
+    display: flex;
+    justify-content: start;
+    padding: 0 2px;
+    background: #fda9a9;
+    align-items: center;
+    gap: 15px;
     color: #2B2C34;
 }
-.wrapper_Featured_article div:nth-child(1) a{ /*переделать на класс и выше тоже*/
-    font-size: 20px;
+.date_of_article>div p:nth-child(1){
+    margin-bottom: 4px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.date_of_article>div p:nth-child(2){
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: capitalize;
     display: flex;
+    width: 184px;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
 }
-.wrapper_Featured_article div:nth-child(1) a>img{ /*переделать на класс и выше тоже*/
-    padding: 9px 7px 2px 0;
+.dot{
+    margin-bottom: 4px;
+    font-size: 14px;
 }
-
