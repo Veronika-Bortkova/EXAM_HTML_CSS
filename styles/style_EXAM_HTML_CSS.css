@@ -151,7 +151,10 @@ main{
 .section_Hi_im_Dasteen form input[type = "email"]:focus{
     outline: none;
 }
-.section_Hi_im_Dasteen img{
+.section_Hi_im_Dasteen form input[type = "email"]:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #FFFFFE inset !important;
+}
+ .section_Hi_im_Dasteen img{
     margin: 164px 0 283px 0;
 }
 .section_Hi_im_Dasteen form input[type = "submit"]{
@@ -255,8 +258,7 @@ div.anothercolor:hover p{
     width: 100%;
     height: 2504px;
     padding: 80px 0;
-    /*background: #FFFFFE;*/
-    background: #b4ffe7;
+    background: #FFFFFE;
 }
 .w_1250_section_articles{
     width: 1250px;
@@ -266,7 +268,6 @@ div.anothercolor:hover p{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: #c7c7f8;
 }
 .wrapper_Featured_article, .wrapper_css_article, .wrapper_javascript_article, .wrapper_React_JS_article{
     width: 100%;
@@ -275,7 +276,6 @@ div.anothercolor:hover p{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    background: antiquewhite;
 }
 .Featured_article, .css_article, .javascript_article, .React_JS_article{
     width: 100%;
@@ -283,41 +283,13 @@ div.anothercolor:hover p{
     display: flex;
     justify-content: space-between;
     align-items: start;
-    background: #ccf6f6;
 }
-/*.wrapper_Featured_article>div:nth-child(1){  !*переделать на класс и выше тоже*!*/
-/*.top_row_in_card_blocks{*/
-/*    width: 100%;*/
-/*    height: 35px;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    font-family: "Plus Jakarta Sans", sans-serif;*/
-/*    font-weight: 700;*/
-/*    font-size: 24px;*/
-/*    line-height: 100%;*/
-/*    letter-spacing: 0;*/
-/*    text-transform: capitalize;*/
-/*    color: #2B2C34;*/
-/*}*/
-/*.wrapper_Featured_article div:nth-child(1) a{ !*переделать на класс и выше тоже*!*/
-/*.a_in_top_row_in_card_blocks{*/
-/*    font-size: 20px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    gap: 12px;*/
-}
-/*.wrapper_Featured_article div:nth-child(1) a>img{ !*переделать на класс и выше тоже*!*/
-/*.img_in_a_in_top_row_in_card_blocks{*/
-/*    padding: 9px 7px 2px 0;*/
-/*}*/
 .Featured_article, .css_article,.javascript_article, .React_JS_article{
     width: 100%;
     height: 425px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #caff97;
 }
 .card_article{
     width: 300px;
@@ -340,7 +312,6 @@ div.anothercolor:hover p{
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 100%;
     letter-spacing: 0;
     text-transform: capitalize;
     margin-top: 25px;
@@ -352,7 +323,6 @@ div.anothercolor:hover p{
     display: flex;
     justify-content: start;
     padding: 0 2px;
-    background: #fda9a9;
     align-items: center;
     gap: 15px;
     color: #2B2C34;
@@ -380,4 +350,28 @@ div.anothercolor:hover p{
 .dot{
     margin-bottom: 4px;
     font-size: 14px;
+}
+.articles button{
+    width: 165px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFE;
+    background: #6246EA;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+/*------------------------------section forma Subscribe-----------------------------------*/
+.forma_Subscribe{
+    width: 100%;
+    height: 453px;
+    padding: 58px 372px;
+    margin: 0 auto;
+
+
+
 }
